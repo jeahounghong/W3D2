@@ -1,9 +1,10 @@
 class Card
-    attr_reader :reveal, :face_value
+    attr_reader :face_value
+    attr_accessor :reveal
 
     def initialize(face_value)
         @face_value = face_value
-        @reveal = false;
+        @reveal = false
     end
 
     # def reveal
